@@ -37,3 +37,22 @@ INSERT INTO Courses (course_id, course_name, course_description) VALUES
 	(8, 'Biology II: Genetics and Evolution', 'A focused study on genetic inheritance, molecular biology, and evolutionary theory.'),
 	(9, 'Public Speaking and Communication', 'Build confidence and clarity in verbal communication through speeches, presentations, and audience engagement exercises.'),
 	(10, 'Introduction to Programming with Python', 'Learn the basics of coding using Python, covering syntax, loops, functions, and simple algorithms.');
+
+/* Insert more data into Students table */
+INSERT INTO Students (student_id, first_name, last_name, age, email) VALUES
+  (10, 'Alice', 'Johnson', 21, 'alice_johnson@gmail.com'),
+  (11, 'Bob', 'Smith', 22, 'bob_smithsonian.hi@outlook.com'),
+  (12, 'Charlie', 'Brown', 26, 'chbrown1999@me.com'),
+  (13, 'David', 'Williams', 24, 'dw_thedarklord@gmail.com,'),
+  (14, 'Eve', 'Davis', 23, 'eve.dav1s@outlook.com');
+
+/* Use SELECT statement to retrieve all data from Students table */
+SELECT * FROM Students;
+
+/* Updaate age of a student */
+UPDATE Students
+SET age = 21
+WHERE student_id = 1;
+
+/* Verify changes */
+SELECT * FROM Students WHERE student_id = 1;
